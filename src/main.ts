@@ -1,9 +1,12 @@
 import './assets/main.css'
 
 import { createApp } from 'vue'
+
 // import VueMarkdown from 'vue-markdown';
 // import MarkdownIt from 'markdown-it'
 import VueMarkdownIt  from 'vue3-markdown-it'
+import 'highlight.js/styles/monokai.css'; // 引入代码高亮主题
+
 // console.log('VueMarkdownIt', VueMarkdownIt)
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
