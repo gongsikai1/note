@@ -202,7 +202,12 @@ onMounted(() => {
           <!-- <span v-html="decodeURIComponent(item.content.replace('\n', '<br />'))"></span> -->
           <!-- <span v-html="decodeURIComponent(item.content.replace('%0A', '<br />'))"></span> -->
           <!-- <span v-html="decodeURIComponent(item.content.replaceAll('%20', `<span style='visiblity: hidden'>1</span>`).replaceAll('%0A', '<br />'))"></span> -->
-          <span v-html="decodeURIComponent( (item.content || '').replaceAll('%20', `<span style='visibility: hidden'>8</span>`).replaceAll('%0A', '<br />'))"></span>
+          
+          <!-- <vue-markdown :content="item.content"></vue-markdown> -->
+          <my-markdown :source="decodeURIComponent((item.content || ''))" />
+
+          <!-- <span v-html="decodeURIComponent( (item.content || '').replaceAll('%20', `<span style='visibility: hidden'>8</span>`).replaceAll('%0A', '<br />'))"></span> -->
+
         </p>
         <!-- <textarea class="note-textarea note-textarea-text" v-if="noteEditData[item.uuid]" v-model="noteEditData[item.uuid].content"></textarea> -->
 
