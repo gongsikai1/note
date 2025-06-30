@@ -186,7 +186,7 @@ onMounted(() => {
           <!-- {{ decodeURIComponent(moment(item.create_time, "YYYY MM DD hh:mm:ss")) }} -->
           <!-- {{ decodeURIComponent(moment(item.create_time).format("YYYY MM DD hh:mm:ss")) }} -->
           <!-- {{ decodeURIComponent(moment(item.create_time).format("YYYY-MM-DD hh:mm:ss")) }} -->
-          {{ decodeURIComponent(moment(item.create_time).format("YYYY年MM月DD日 hh时mm分ss秒")) }}
+          {{ decodeURIComponent(moment(item.create_time).format("YYYY年MM月DD日 HH时mm分ss秒")) }}
         </p>
         <!-- <p>
           {{ decodeURIComponent(item.content) }}
